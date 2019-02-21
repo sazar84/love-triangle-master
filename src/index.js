@@ -7,7 +7,7 @@ module.exports = function getLoveTrianglesCount(preferences = []) {
 
     let length = preferences.length; //колличество членов массива
     let count = 0;  //счетчик верных равенств цикла
-    for (let i = 0; i<length; i++) { //цикл трех проверок
+    for (let i = 0; i<length; i++) { //цикл трех проверок трех соседних элементов
         let n = preferences[i] - 1;
         if (n == i) continue; 
         let k = preferences[n] - 1;
